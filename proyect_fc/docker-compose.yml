@@ -7,7 +7,7 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./html:/var/www/fixit/html/
+      - ./html:/var/www/proyecto_fc/html/
     depends_on:
       - db
     #environment:
