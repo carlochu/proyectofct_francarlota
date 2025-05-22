@@ -183,6 +183,17 @@ nav a:hover {
     text-decoration: underline;
 }
 
+/* Logo pequeño: zoom suave al hacer hover */
+header img[alt="Logo FC Resolves"],
+header img[alt="FC Resolves Logo"] {
+    transition: transform 0.3s cubic-bezier(.4,2,.6,1);
+}
+
+header img[alt="Logo FC Resolves"]:hover,
+header img[alt="FC Resolves Logo"]:hover {
+    transform: scale(1.15);
+}
+
 /* --- Contenedor Principal y Layout (Flexbox Grid Manual) --- */
 .container {
     display: flex;
@@ -225,7 +236,6 @@ nav a:hover {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid var(--primary-color);
 }
 
 .contact-footer {
@@ -238,6 +248,7 @@ nav a:hover {
     bottom: 0px;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .contact-footer p {
@@ -353,7 +364,6 @@ nav a:hover {
     height: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid var(--primary-color);
 }
 
 .contact-footer {
@@ -366,6 +376,7 @@ nav a:hover {
     bottom: 0px;
     position: fixed;
     width: 100%;
+    z-index: 1000;
 }
 
 .contact-footer p {
